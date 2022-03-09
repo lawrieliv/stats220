@@ -1,1 +1,1 @@
-# stats220
+# https://github.com/lawrieliv/stats220
