@@ -1,0 +1,170 @@
+---
+title: "meme.R"
+author: "Liv Lawrie 860370011"
+date: "10/03/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("magick")
+
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+5 stages of grief
+denial, anger, bargaining, depression and acceptance
+
+```{r cars}
+library(magick)
+## creating word boxes
+# grief box
+grief <- image_blank(width = 200, 
+            height = 200, 
+            color = "#e6f7ff") %>%
+  image_annotate(text = "5 stages of",
+                 color = "#ff9966",
+                 size = 40,
+                 font = "Impact",
+                 gravity = "center")
+
+# denial box
+denial <- image_blank(width = 200, 
+                       height = 200, 
+                       color = "#e6f7ff") %>%
+  image_annotate(text = "Denial",
+                 color = "#ff9966",
+                 size = 40,
+                 font = "Impact",
+                 gravity = "center")
+# anger box
+anger <- image_blank(width = 200, 
+                       height = 200, 
+                       color = "#e6f7ff") %>%
+  image_annotate(text = "Anger",
+                 color = "#ff9966",
+                 size = 40,
+                 font = "Impact",
+                 gravity = "center")
+
+# bargaining box
+bargain <- image_blank(width = 200, 
+                       height = 200, 
+                       color = "#e6f7ff") %>%
+  image_annotate(text = "Bargain",
+                 color = "#ff9966",
+                 size = 40,
+                 font = "Impact",
+                 gravity = "center")
+
+depression <- image_blank(width = 200, 
+                       height = 200, 
+                       color = "#e6f7ff") %>%
+  image_annotate(text = "Depression",
+                 color = "#ff9966",
+                 size = 40,
+                 font = "Impact",
+                 gravity = "center")
+
+# Acceptance box
+acceptance <- image_blank(width = 200, 
+                       height = 200, 
+                       color = "#e6f7ff") %>%
+  image_annotate(text = "Acceptance",
+                 color = "#ff9966",
+                 size = 40,
+                 font = "Impact",
+                 gravity = "center")
+
+
+
+
+## picture boxes
+grief2 <- image_blank(width = 200, 
+            height = 200, 
+            color = "#e6f7ff") %>%
+  image_annotate(text = "R error grief",
+                 color = "#ff9966",
+                 size = 40,
+                 font = "Impact",
+                 gravity = "center")
+
+denial_human <- image_read("https://image.shutterstock.com/image-vector/young-man-showing-crossed-hands-600w-2054500886.jpg") %>%
+  image_scale(200)
+denial_human
+
+anger_human <- image_read("https://image.shutterstock.com/image-vector/anger-rage-screaming-concept-young-600w-1887490843.jpg") %>%
+  image_scale(200)
+anger_human
+
+bargaining_human <- image_read("https://image.shutterstock.com/image-vector/people-begging-praying-hands-together-600w-1618420927.jpg") %>%
+  image_scale(200)
+bargaining_human
+
+depression_human <- image_read("https://image.shutterstock.com/image-vector/sad-young-girl-flat-vector-600w-1609331719.jpg") %>%
+  image_scale(200)
+depression_human
+
+acceptance_human <- image_read("https://image.shutterstock.com/image-vector/guy-sitting-lotus-position-600w-1410510524.jpg") %>%
+  image_scale(200)
+acceptance_human
+
+
+
+## combining rows
+# first row
+firstrow_vector <- c(grief, grief2)
+first_row <- image_append(firstrow_vector)
+first_row
+
+# second row
+secondrow_vector <- c(denial, denial_human)
+second_row <- image_append(secondrow_vector)
+second_row
+
+
+# third row
+thirdrow_vector <- c(anger, anger_human)
+third_row <- image_append(thirdrow_vector)
+third_row
+
+# fourth row
+fourthrow_vector <- c(bargain, bargaining_human)
+fourth_row <- image_append(fourthrow_vector)
+fourth_row
+
+# fifth row
+fifthrow_vector <- c(depression, depression_human)
+fifth_row <- image_append(fifthrow_vector)
+fifth_row
+
+# six row
+sixthrow_vector <- c(acceptance, acceptance_human)
+sixth_row <- image_append(sixthrow_vector)
+sixth_row
+
+## combining whole thing
+meme <- c(first_row, second_row, third_row, fourth_row, fifth_row, sixth_row) %>%
+  image_append(stack = TRUE) %>%
+  image_scale(500)
+
+
+image_write(meme, "my.meme.png")
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
