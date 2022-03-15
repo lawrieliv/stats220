@@ -8,6 +8,9 @@ If this still failed to make you smile, have a watch of your favourite video
 ![(https://www.youtube.com)
 
 
+# my not so funny GIF, lets all be nice when marking these ... i'm learning technological and comedic skills in stats 220
+![image](https://user-images.githubusercontent.com/101287893/158311922-07e1541e-c2a7-479a-9812-df9874782a61.gif)
+
 ---
 title: "meme.R"
 author: "Liv Lawrie 860370011"
