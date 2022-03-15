@@ -5,11 +5,7 @@
 ![](https://cdn1.vectorstock.com/i/1000x1000/99/80/laughing-smiley-emoticon-cartoon-happy-face-vector-22209980.jpg)
 
 # If this still failed to make you smile, i have linked a website with information that may help you
-![](
-
-
-How to Smile | Better You - YouTubehttps://www.youtube.com › watch
-)
+![](How to Smile | Better You - YouTubehttps://www.youtube.com › watch)
 
 ---
 title: "meme.R"
