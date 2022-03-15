@@ -1,7 +1,7 @@
 ![my meme](https://user-images.githubusercontent.com/101287893/157534674-879d0f60-a670-4a9c-aa95-b8f2986eafeb.jpg)
 
 
-![Uploading IMG_0195 2.JPG…]()
+![Uploading IMG_0195 2.JPG…](https://cdn1.vectorstock.com/i/1000x1000/99/80/laughing-smiley-emoticon-cartoon-happy-face-vector-22209980.jpg)
 
 ---
 title: "meme.R"
