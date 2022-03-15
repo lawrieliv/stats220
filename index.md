@@ -1,7 +1,7 @@
 ![my meme](https://user-images.githubusercontent.com/101287893/157534674-879d0f60-a670-4a9c-aa95-b8f2986eafeb.jpg)
 
 
-
+![Uploading IMG_0195 2.JPG…]()
 
 ---
 title: "meme.R"
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 install.packages("magick")
 ```
 
-## R Markdown
+### R Markdown
 
 ```{r cars}
 library(magick)
