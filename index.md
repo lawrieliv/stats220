@@ -1,8 +1,12 @@
+# I hope this meme made you smile and if not .... I popped a smile under it
 ![my meme](https://user-images.githubusercontent.com/101287893/157534674-879d0f60-a670-4a9c-aa95-b8f2986eafeb.jpg)
 
 
-![Uploading IMG_0195 2.JPG…](https://cdn1.vectorstock.com/i/1000x1000/99/80/laughing-smiley-emoticon-cartoon-happy-face-vector-22209980.jpg)
+![](https://cdn1.vectorstock.com/i/1000x1000/99/80/laughing-smiley-emoticon-cartoon-happy-face-vector-22209980.jpg)
 
+# If this still failed to make you smile, i have linked a website with information that may help you
+
+![](https://beaversdentistry.com/how-to-have-the-perfect-smile-in-every-picture/)
 ---
 title: "meme.R"
 author: "Liv Lawrie 860370011"
